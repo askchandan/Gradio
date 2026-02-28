@@ -1,0 +1,18 @@
+# Paper Correction AI - Requirements (FREE Version using Google Gemini)
+# Install with: pip install -r requirements.txt
+
+# Core — FREE AI (replaces paid Anthropic Claude)
+# google-generativeai>=0.7.0  # Google Gemini Vision API — FREE tier (no credit card!)
+google-genai
+# PDF & Image processing
+pdf2image>=1.17.0            # PDF to image conversion
+Pillow>=10.0.0               # Image processing
+
+# For extractor.py (printed PDFs only)
+pytesseract>=0.3.10          # Tesseract wrapper (for questions.pdf / solutions.pdf)
+poppler-utils
+
+# System dependencies (install separately):
+# Ubuntu/Debian: sudo apt-get install -y poppler-utils tesseract-ocr
+# macOS:         brew install poppler tesseract
+# Windows:       install Poppler and Tesseract binaries manually
